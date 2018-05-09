@@ -1,9 +1,9 @@
 package Data;
 
-public class Pago {
+public class Pago 
+{
+	
+	// tiene que relacionar el ID_vuelo e ID_reserva 
 
-	private void syso() {
-		// TODO Auto-generated method stub
-		System.out.println("Bienn");
-	}
+	
 }

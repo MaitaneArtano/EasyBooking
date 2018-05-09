@@ -1,5 +1,5 @@
 package Remote;
 
-public class IRemoteFacade {
+public interface IRemoteFacade {
 
 }
