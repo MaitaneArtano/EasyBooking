@@ -10,7 +10,7 @@ public class Vuelo
 	private int cant_ticket;
 	private String origen;
 	private String destino;
-	
+	private int precio_ticket;
 	
 	public String getID_vuelo() {
 		return ID_vuelo;
@@ -42,6 +42,12 @@ public class Vuelo
 	}
 	public void setDestino(String destino) {
 		this.destino = destino;
+	}
+	public int getPrecio_ticket() {
+		return precio_ticket;
+	}
+	public void setPrecio_ticket(int precio_ticket) {
+		this.precio_ticket = precio_ticket;
 	}
 	
 	
