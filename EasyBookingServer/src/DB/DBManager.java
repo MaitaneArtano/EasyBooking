@@ -77,4 +77,9 @@ public class DBManager
 		return null;
 	}
 	
+	public List<Vuelo> getVuelos() {
+		return this.VueloCache;
+	}
+
+	
 }

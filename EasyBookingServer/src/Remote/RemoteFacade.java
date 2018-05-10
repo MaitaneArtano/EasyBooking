@@ -2,9 +2,13 @@ package Remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.List;
 
+import DTO.VueloDTO;
 import Data.Usuario;
 import Services.AuthorisationService;
+import Services.VueloService;
+
 
 
 
@@ -18,7 +22,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	private RemoteFacade() throws RemoteException 
 	{
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	public static RemoteFacade getInstance() {
@@ -38,6 +42,21 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 		
 		return state != null;
 	}
+
+	@Override
+	public List<VueloDTO> getVuelos(String vuelos) throws RemoteException 
+	{
+		return VueloService.getInstance().getVuelos();
+		
+	}
+
+	@Override
+	public List<VueloDTO> getVuelos() throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 
 	
 	
