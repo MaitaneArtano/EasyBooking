@@ -20,7 +20,8 @@ public class VueloService
 		return instance;
 	}
 
-	public List<VueloDTO> getVuelos() {
+	public List<VueloDTO> getVuelos() 
+	{
 		return VueloAssembler.getInstance().entityToDTO(DBManager.getInstance().getVuelos());
 	}
 

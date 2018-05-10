@@ -32,10 +32,10 @@ public class VueloAssembler
 		return dto;
 	}
 
-	public List<VueloDTO> entityToDTO(List<Vuelo> vuelo) {		
+	public List<VueloDTO> entityToDTO(List<Vuelo> vuelos) {		
 		List<VueloDTO> dtos = new ArrayList<>();
 		
-		for (Vuelo vuelos : vuelo) {
+		for (Vuelo vuelo : vuelos) {
 			dtos.add((VueloDTO) this.entityToDTO(vuelo));
 		}
 		

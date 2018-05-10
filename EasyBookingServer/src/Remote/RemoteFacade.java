@@ -9,9 +9,6 @@ import Data.Usuario;
 import Services.AuthorisationService;
 import Services.VueloService;
 
-
-
-
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 {
 	private static final long serialVersionUID = 1L;
@@ -43,7 +40,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 		return state != null;
 	}
 
-	@Override
+	
 	public List<VueloDTO> getVuelos(String vuelos) throws RemoteException 
 	{
 		return VueloService.getInstance().getVuelos();
@@ -51,10 +48,13 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	}
 
 	@Override
-	public List<VueloDTO> getVuelos() throws RemoteException {
-		// TODO Auto-generated method stub
+	public List<VueloDTO> getVuelos() throws RemoteException 
+	{
+		
 		return null;
 	}
+
+
 
 	
 

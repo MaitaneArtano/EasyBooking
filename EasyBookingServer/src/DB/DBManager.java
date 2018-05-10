@@ -6,6 +6,7 @@ import java.util.List;
 import Data.Usuario;
 import Data.Vuelo;
 
+
 public class DBManager 
 {
 
@@ -74,6 +75,16 @@ public class DBManager
 			}
 		}
 		
+		return null;
+	}
+	
+	
+	public Vuelo getVuelos(String vuelos) {		
+		for (Vuelo vuelo : this.VueloCache) {
+			if (vuelo.getID_vuelo().equalsIgnoreCase(vuelos)) {
+				return vuelo;
+			}
+		}
 		return null;
 	}
 	
