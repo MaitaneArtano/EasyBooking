@@ -35,11 +35,12 @@
 
     <!-- TARGET : compile -->
     <target name="compile" depends="clean, prepare">
-        <javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="full.classpath" includeantruntime="no">
+        <javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="classpath" includeantruntime="no">
             <include name="**/*.java"/>
         </javac>
     </target>
 	
+
     <!-- TARGET : enhance -->
     <target name="enhance" depends="compile">
     	<taskdef name="enhancer" classpathref="full.classpath" classname="org.datanucleus.enhancer.EnhancerTask" />
