@@ -1,6 +1,5 @@
 package Services;
 
-import DB.DBManager;
 import Data.Usuario;
 
 public class AuthorisationService 
@@ -17,14 +16,10 @@ public class AuthorisationService
 		return instance;
 	}
 
-	public Usuario login(String email, String password) {
-		Usuario user = DBManager.getInstance().getUser(email);
-		
-		if (user != null && user.chekPassword(password)) {
-			return user;
-		} else {
-			return null;
-		}
+	public Usuario login(String email, String password) 
+	{
+		return null;
+	
 	}
 
 }

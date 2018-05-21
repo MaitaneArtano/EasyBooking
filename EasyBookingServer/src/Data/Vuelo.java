@@ -1,5 +1,10 @@
 package Data;
 
+
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable
+
 public class Vuelo 
 {
 	

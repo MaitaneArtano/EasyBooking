@@ -5,7 +5,6 @@ import java.util.List;
 
 import Data.Usuario;
 import Data.Vuelo;
-import es.deusto.ingenieria.sd.auctions.server.data.Category;
 
 
 public class DBManager 
