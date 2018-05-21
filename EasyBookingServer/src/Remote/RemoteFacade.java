@@ -4,6 +4,8 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
+import DTO.CompleteVueloDTO;
+import DTO.FacturaDTO;
 import DTO.VueloDTO;
 import Data.Usuario;
 import Services.AuthorisationService;
@@ -33,18 +35,20 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 		
 		return instance;
 	}
-	
-	public boolean login(String email, String password) {		
-		this.state = AuthorisationService.getInstance().login(email, password);
+
+	@Override
+	public boolean login(String email, String password) throws RemoteException 
+	{
 		
-		return state != null;
+		return false;
 	}
 
-	
-	public List<VueloDTO> getVuelos(String vuelos) throws RemoteException 
+	@Override
+	public boolean signin(String email, String password) throws RemoteException
 	{
-		return VueloService.getInstance().getVuelos();
-		
+
+
+		return false;
 	}
 
 	@Override
@@ -54,10 +58,20 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 		return null;
 	}
 
+	@Override
+	public List<FacturaDTO> compra(String id_vuelo, int num_tarjeta)
+	{
 
+		return null;
+	}
 
+	@Override
+	public List<CompleteVueloDTO> getVueloDetails(String id_vuelo)
+	{
+		
+		return null;
+	}
 	
-
 	
 	
 	
