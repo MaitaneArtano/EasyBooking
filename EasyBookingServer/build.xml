@@ -19,6 +19,10 @@
         <pathelement location="${bin.dir}"/>
         <pathelement location="${resources.dir}"/>
     </path>
+	
+	<target name="help">
+				<echo>Usage: ant [run | runServer]</echo>
+		</target>
 
     <!-- TARGET : clean -->
     <target name="clean">
@@ -77,6 +81,20 @@
         </schematool>
     </target>
 	
+	
+	 <!-- SchemaTool "dbinfo" -->
+		    <target name="schemainfo">
+		    	<taskdef name="schematool" classpathref="classpath" classname="org.datanucleus.store.schema.SchemaToolTask"/>
+		    	
+		        <schematool mode="dbinfo" classpathref="classpath" failonerror="true" props="datanucleus.properties">
+		        	 <sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
+		        	<fileset dir="${bin.dir}">
+		                <include name="**/*.class"/>
+		            </fileset>
+	       
+		        </schematool>
+		    </target>
+	
     <!-- TARGET : Run -->	
 	<target name="run" depends="createschema">
         <java classname="Server.Main" classpathref="full.classpath" fork="true">
@@ -84,3 +102,4 @@
 		</java>
     </target>
 </project>
+
