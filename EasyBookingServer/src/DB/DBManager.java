@@ -5,6 +5,7 @@ import java.util.List;
 
 import Data.Usuario;
 import Data.Vuelo;
+import es.deusto.ingenieria.sd.auctions.server.data.Category;
 
 
 public class DBManager 
@@ -12,18 +13,15 @@ public class DBManager
 
 	private static DBManager instance;
 	
+	//Hauekin duda, hemen eon behar due?
 	private List<Vuelo> VueloCache;
 	private List<Usuario> UsuarioCache;
-	//private List<Pago> usersCache;
-	//private List<Reserva> bidsCache;
 	
 	
 	private DBManager() 
 	{
 		this.VueloCache = new ArrayList<>();
 		this.UsuarioCache = new ArrayList<>();
-		//this.usersCache = new ArrayList<>();
-		//this.bidsCache =  new ArrayList<>();
 		
 		Usuario user1 = new Usuario();
 		user1.setEmail("sample@gmail.com");
@@ -67,7 +65,27 @@ public class DBManager
 		return instance;
 	}
 	
-	public Usuario getUser(String email) {
+	//Hemen arraylist bat bueltatzeola ustet
+	public Vuelo getVuelo()
+	{
+		Vuelo vuelo = null;
+		return vuelo;
+	}
+	
+	public Vuelo getVueloDetails(String id_vuelo)
+	{
+		Vuelo vuelo = null;
+		return vuelo;
+	}
+	
+	public boolean store(Usuario usuario)
+	{
+		this.UsuarioCache.add(usuario);
+		return true;
+	}
+	
+	public Usuario getUsuario(String email) 
+	{
 		
 		for (Usuario user : this.UsuarioCache) {
 			if (user.getEmail().equalsIgnoreCase(email)) {
@@ -78,17 +96,9 @@ public class DBManager
 		return null;
 	}
 	
-	
-	public Vuelo getVuelos(String vuelos) {		
-		for (Vuelo vuelo : this.VueloCache) {
-			if (vuelo.getID_vuelo().equalsIgnoreCase(vuelos)) {
-				return vuelo;
-			}
-		}
-		return null;
-	}
-	
-	public List<Vuelo> getVuelos() {
+	//Haure duda
+	public List<Vuelo> getVuelos() 
+	{
 		return this.VueloCache;
 	}
 
