@@ -1,35 +1,20 @@
 package Data;
 
-import java.sql.Date;
-
 public class Vuelo 
 {
 	
-	private String ID_vuelo;
-	private String Fecha;
-	private int cant_ticket;
+	private String id_vuelo;
 	private String origen;
 	private String destino;
-	private int precio_ticket;
+	private int precio;
+	private String fecha;
 	
-	public String getID_vuelo() {
-		return ID_vuelo;
-	}
-	public void setID_vuelo(String iD_vuelo) {
-		ID_vuelo = iD_vuelo;
-	}
 	
-	public String getFecha() {
-		return Fecha;
+	public String getId_vuelo() {
+		return id_vuelo;
 	}
-	public void setFecha(String fecha) {
-		Fecha = fecha;
-	}
-	public int getCant_ticket() {
-		return cant_ticket;
-	}
-	public void setCant_ticket(int cant_ticket) {
-		this.cant_ticket = cant_ticket;
+	public void setId_vuelo(String id_vuelo) {
+		this.id_vuelo = id_vuelo;
 	}
 	public String getOrigen() {
 		return origen;
@@ -43,12 +28,20 @@ public class Vuelo
 	public void setDestino(String destino) {
 		this.destino = destino;
 	}
-	public int getPrecio_ticket() {
-		return precio_ticket;
+	public int getPrecio() {
+		return precio;
 	}
-	public void setPrecio_ticket(int precio_ticket) {
-		this.precio_ticket = precio_ticket;
+	public void setPrecio(int precio) {
+		this.precio = precio;
 	}
+	public String getFecha() {
+		return fecha;
+	}
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}	
+	
+	
 	
 	
 

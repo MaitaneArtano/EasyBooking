@@ -4,16 +4,25 @@ public class Reserva
 {
 	//que coja el atributo ID_vuelo de vuelo
 	
-	private String ID_Reserva;
+	private String id_reserva;
+	private int cantidad;
 
-	public String getID_Reserva() 
+	public String getid_reserva() 
 	{
-		return ID_Reserva;
+		return id_reserva;
 	}
 
-	public void setID_Reserva(String iD_Reserva) 
+	public void setid_reserva(String id_reserva) 
 	{
-		ID_Reserva = iD_Reserva;
+		id_reserva = id_reserva;
+	}
+
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
 	}
 	
 	
