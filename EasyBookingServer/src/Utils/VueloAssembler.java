@@ -21,18 +21,17 @@ public class VueloAssembler
 	}
 	
 
-	public VueloDTO entityToDTO(Vuelo vuelo) {
+	public VueloDTO entityToDTO(Vuelo vuelo) 
+	{
 		VueloDTO dto = new VueloDTO();		
-		dto.setID_vuelo(vuelo.getID_vuelo());
-		dto.setPrecio_ticket(vuelo.getPrecio_ticket());
-		dto.setDestino(vuelo.getDestino());
-		dto.setFecha(vuelo.getFecha());
-		dto.setOrigen(vuelo.getOrigen());
-		dto.setPrecio_ticket(vuelo.getCant_ticket());
+		dto.setId_vuelo(vuelo.getId_vuelo());
+		dto.setPrecio(vuelo.getPrecio());
 		return dto;
 	}
 
-	public List<VueloDTO> entityToDTO(List<Vuelo> vuelos) {		
+	 //Hau organigraman eztao
+	public List<VueloDTO> entityToDTO(List<Vuelo> vuelos) 
+	{		
 		List<VueloDTO> dtos = new ArrayList<>();
 		
 		for (Vuelo vuelo : vuelos) {
