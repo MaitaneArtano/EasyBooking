@@ -3,7 +3,7 @@ package Data;
 
 import javax.jdo.annotations.PersistenceCapable;
 
-@PersistenceCapable (detachable = "true")
+@PersistenceCapable
 
 public class Vuelo 
 {
