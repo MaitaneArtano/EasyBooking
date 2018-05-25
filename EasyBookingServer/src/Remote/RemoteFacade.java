@@ -4,24 +4,29 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Transaction;
+
 import DTO.CompleteVueloDTO;
 import DTO.FacturaDTO;
 import DTO.VueloDTO;
 import Data.Usuario;
-import Services.AuthorisationService;
-import Services.VueloService;
+import Data.Vuelo;
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 {
 	private static final long serialVersionUID = 1L;
 	private static RemoteFacade instance;
 	public Usuario state;
+	private PersistenceManagerFactory pmf;
 
 	
 	private RemoteFacade() throws RemoteException 
 	{
 		super();
-		
+		pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 	}
 	
 	public static RemoteFacade getInstance() {
@@ -71,9 +76,13 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 		
 		return null;
 	}
-	
-	
-	
-	
 
+	@Override
+	public void GuardarVuelo(String id_vuelo, String origen, String destino, int precio, String fecha)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 }

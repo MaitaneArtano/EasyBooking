@@ -1,13 +1,15 @@
 package Data;
 
 
+import java.io.Serializable;
+
 import javax.jdo.annotations.PersistenceCapable;
 
-@PersistenceCapable
+@PersistenceCapable(detachable = "true")
 
-public class Vuelo 
+public class Vuelo implements Serializable
 {
-	
+	private static final long serialVersionUID = 1L;
 	private String id_vuelo;
 	private String origen;
 	private String destino;
@@ -15,6 +17,16 @@ public class Vuelo
 	private String fecha;
 	
 	
+	
+	public Vuelo(String id_vuelo, String origen, String destino, int precio, String fecha)
+	{
+		super();
+		this.id_vuelo = id_vuelo;
+		this.origen = origen;
+		this.destino = destino;
+		this.precio = precio;
+		this.fecha = fecha;
+	}
 	public String getId_vuelo() {
 		return id_vuelo;
 	}
