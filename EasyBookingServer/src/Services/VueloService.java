@@ -23,12 +23,12 @@ public class VueloService
 
 	public List<VueloDTO> getVuelos() 
 	{
-		return VueloAssembler.getInstance().entityToDTO(DBManager.getInstance().getVuelos());
+		return null;
 	}
 	
 	public List<VueloDTO> getVueloDetails(String id_vuelo) 
 	{
-		return VueloAssembler.getInstance().entityToDTO(DBManager.getInstance().getVuelos());
+		return null;
 	}
 
 	
