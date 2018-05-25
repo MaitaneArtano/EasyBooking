@@ -3,7 +3,7 @@ package Data;
 
 import javax.jdo.annotations.PersistenceCapable;
 
-@PersistenceCapable
+@PersistenceCapable(detachable = "true")
 
 public class Usuario
 {
@@ -11,7 +11,12 @@ public class Usuario
 	
 	private String email;
 	
-
+	public Usuario(String email)
+	{
+		super();
+		this.email = email;
+	}
+	
 	public String getEmail() {
 		return email;
 	}

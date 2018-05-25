@@ -1,11 +1,15 @@
 package Remote;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
 import javax.jdo.Transaction;
 
 import Data.Vuelo;
+
 
 public class VueloDAO implements IVueloDAO
 {
@@ -44,5 +48,15 @@ public class VueloDAO implements IVueloDAO
     		pm.close();
 	    }
 	}
+
+	@Override
+	public List<Vuelo> getVuelos() 
+	{
+		
+		return null;
+	}
+	
+	
+
 	
 }
