@@ -3,6 +3,7 @@ package Server;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
+//strategy
 public interface ILogin extends Remote
 {
 	public void login(String email, String password, String serverIP, int serverPort) throws RemoteException;

@@ -3,6 +3,7 @@ package DB;
 import java.util.ArrayList;
 import java.util.List;
 
+import Data.Usuario;
 import Data.Vuelo;
 import Remote.IUsuarioDAO;
 import Remote.IVueloDAO;
@@ -44,6 +45,15 @@ public class DBManager
 		vueloDAO.storeVuelo(vuelo);
 		
 	}
+	
+	public boolean storeUsuario(Usuario usuario)
+	{
+		usuarioDAO = new UsuarioDAO();
+		usuarioDAO.storeUsuario(usuario);
+		return true;
+	}
+	
+	
 }
 	
 	

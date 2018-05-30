@@ -2,6 +2,7 @@ package Remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.jdo.JDOHelper;
@@ -14,6 +15,9 @@ import DTO.FacturaDTO;
 import DTO.VueloDTO;
 import Data.Usuario;
 import Data.Vuelo;
+import Server.ILogin;
+import Services.UsuarioService;
+
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 {
@@ -21,6 +25,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	private static RemoteFacade instance;
 	public Usuario state;
 	private PersistenceManagerFactory pmf;
+	private ILogin objGatewayLogin;
 
 	
 	private RemoteFacade() throws RemoteException 
@@ -29,18 +34,23 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 		pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 	}
 	
-	public static RemoteFacade getInstance() {
-		if (instance == null) {
-			try {
+	public static RemoteFacade getInstance() 
+	{
+		if (instance == null) 
+		{
+			try 
+			{
 				instance = new RemoteFacade();
-			} catch (Exception ex) {
+			} catch (Exception ex) 
+			{
 				System.err.println("# Error creating RemoteFaçade: " + ex);
 			}
 		}
 		
 		return instance;
 	}
-
+	
+	
 	@Override
 	public boolean login(String email, String password) throws RemoteException 
 	{
@@ -51,9 +61,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	@Override
 	public boolean signin(String email, String password) throws RemoteException
 	{
-
-
-		return false;
+		return UsuarioService.getInstance().crearUsuario(email, password);
 	}
 
 	@Override
@@ -83,6 +91,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 		// TODO Auto-generated method stub
 		
 	}
+
+
 
 	
 }
