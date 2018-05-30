@@ -12,7 +12,6 @@
 		<property name="server.IP" value="127.0.0.1"/> 
 		<property name="server.Name" value="EasyBooking"/>
 		<property name="policy.file" location="security/java.policy"/>
-		<property name="export.file" value="EasyBooking.jar"/>
 		<property name="server.Usuario" value="EasyBookingUsuario"/>
 		<property name="server.Vuelo" value="EasyBookingVuelo"/>
 
@@ -27,7 +26,7 @@
 	    </path>
 		
 		<target name="help">
-					<echo>Usage: ant [run | runServer]</echo>
+					<echo>Usage: ant [build | export | server | run | runServer]</echo>
 			</target>
 
 	    <!-- TARGET : clean -->
@@ -37,6 +36,32 @@
 	        </delete>
 			<delete dir="${bin.dir}"/>
 	    </target>
+		
+		<!-- TARGET : build -->
+		<target name="build" description="Builds the project">
+				<delete dir="${build.dir}"/>
+				<mkdir dir="${build.dir}"/>
+				<javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="full.classpath" deprecation="true" fork="true" includeantruntime="false"/>
+		</target>
+		
+		<!-- TARGET : server -->
+		<target name="server" depends="build" description="Runs Server program">
+				<java classname="Server.Main" classpathref="full.classpath" fork="true">
+		        	<jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
+					<jvmarg value="-Djava.security.policy=${policy.file}"/>			
+		        	<arg value="${server.IP}"/> 
+			 		<arg value="${server.port}"/> 
+					<arg value="${server.Name}"/>
+		        </java>
+		 </target>
+
+	    <!-- TARGET : export -->
+		<target name="export" depends="build" description="Export the project into a .jar file">
+				<delete dir="${dist.dir}"/>
+				<mkdir dir="${dist.dir}"/>
+				<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" includes="**/remote/I**.class, **/dto/**.class" />
+		</target>	
+
 
 	    <!-- TARGET : prepare -->
 	    <target name="prepare">
@@ -108,3 +133,5 @@
 	    </target>
 	</project>
 
+
+	
