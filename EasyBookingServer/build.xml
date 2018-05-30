@@ -59,7 +59,7 @@
 		<target name="export" depends="build" description="Export the project into a .jar file">
 				<delete dir="${dist.dir}"/>
 				<mkdir dir="${dist.dir}"/>
-				<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" includes="**/remote/I**.class, **/dto/**.class" />
+				<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" includes="**/Remote/I**.class, **/dto/**.class" />
 		</target>	
 
 
