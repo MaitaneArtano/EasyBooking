@@ -3,25 +3,22 @@
 	    <!-- project directories -->
 		<property environment="env"/>
 		<property name="src.dir" location="src"/>
-		<property name="bin.dir" location="bin"/>
-		<property name="lib.dir" location="lib"/>
-		<property name="resources.dir" location="resources"/>
+		<property name="build.dir" location="bin"/>
 		<property name="dist.dir" location="dist"/>
 		<property name="export.file" value="EasyBooking.jar"/>	
+		<property name="lib.dir" location="lib"/>
+		<property name="resources.dir" location="resources"/>
 		<property name="server.port" value="1099"/> 
 		<property name="server.IP" value="127.0.0.1"/> 
 		<property name="server.Name" value="EasyBooking"/>
 		<property name="policy.file" location="security/java.policy"/>
-		<property name="server.Usuario" value="EasyBookingUsuario"/>
-		<property name="server.Vuelo" value="EasyBookingVuelo"/>
-
-
+		
 	    <!-- Classpath -->
 	    <path id="full.classpath">
 	        <fileset dir="${lib.dir}">
 	            <include name="**/*.jar"/>
 	        </fileset>
-	        <pathelement location="${bin.dir}"/>
+	        <pathelement location="${build.dir}"/>
 	        <pathelement location="${resources.dir}"/>
 	    </path>
 		
@@ -32,9 +29,9 @@
 	    <!-- TARGET : clean -->
 	    <target name="clean">
 	        <delete includeEmptyDirs="true" quiet="true">
-	            <fileset dir="${bin.dir}" includes="**/*.*"/>
+	            <fileset dir="${build.dir}" includes="**/*.*"/>
 	        </delete>
-			<delete dir="${bin.dir}"/>
+			<delete dir="${build.dir}"/>
 	    </target>
 		
 		<!-- TARGET : build -->
@@ -59,18 +56,18 @@
 		<target name="export" depends="build" description="Export the project into a .jar file">
 				<delete dir="${dist.dir}"/>
 				<mkdir dir="${dist.dir}"/>
-				<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" includes="**/Remote/I**.class, **/dto/**.class" />
+				<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" includes="**/Remote/I**.class, **/DTO/**.class" />
 		</target>	
 
 
 	    <!-- TARGET : prepare -->
 	    <target name="prepare">
-	        <mkdir dir="${bin.dir}"/>
+	        <mkdir dir="${build.dir}"/>
 	    </target>
 
 	    <!-- TARGET : compile -->
 	    <target name="compile" depends="clean, prepare">
-	        <javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="full.classpath" includeantruntime="no">
+	        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="full.classpath" includeantruntime="no">
 	            <include name="**/*.java"/>
 	        </javac>
 	    </target>	
@@ -81,7 +78,7 @@
 	    	
 	   		<enhancer classpathref="full.classpath" failonerror="true">
 	            <sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
-	            <fileset dir="${bin.dir}">
+	            <fileset dir="${build.dir}">
 	                <include name="**/*.class"/>
 	            </fileset>
 	   		</enhancer>
@@ -93,7 +90,7 @@
 
 	        <schematool mode="create" classpathref="full.classpath" failonerror="true" props="datanucleus.properties">
 	            <sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
-	            <fileset dir="${bin.dir}">
+	            <fileset dir="${build.dir}">
 	                <include name="**/*.class"/>
 	            </fileset>
 	        </schematool>
@@ -105,7 +102,7 @@
 
 	    	<schematool mode="delete" classpathref="full.classpath" failonerror="true" props="datanucleus.properties">
 	    		<sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
-	        	<fileset dir="${bin.dir}">
+	        	<fileset dir="${build.dir}">
 	                <include name="**/*.class"/>
 	            </fileset>
 	        </schematool>
@@ -118,7 +115,7 @@
 			    	
 			        <schematool mode="dbinfo" classpathref="classpath" failonerror="true" props="datanucleus.properties">
 			        	 <sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
-			        	<fileset dir="${bin.dir}">
+			        	<fileset dir="${build.dir}">
 			                <include name="**/*.class"/>
 			            </fileset>
 		       
