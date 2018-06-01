@@ -53,8 +53,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	@Override
 	public boolean login(String email, String password) throws RemoteException 
 	{
-		
-		return false;
+		System.out.println("Entra login remote facade");
+		return UsuarioService.getInstance().login(email,password);
 	}
 
 	@Override

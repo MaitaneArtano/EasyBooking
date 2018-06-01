@@ -25,5 +25,9 @@ public class UsuarioService
 		return DBManager.getInstance().storeUsuario(newUsuario);
 	}
 	
-
+	public boolean login(String email, String password)
+	{
+		System.out.println("Entra login usuario service");
+		return instance.login(email, password);
+	}
 }

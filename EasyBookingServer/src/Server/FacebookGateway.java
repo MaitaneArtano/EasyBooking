@@ -17,6 +17,8 @@ public class FacebookGateway implements IAutorizacionGateway {
 	@Override
 	public boolean login(String email, String password)  
 	{
+		
+		System.out.println("Entra");
 		boolean valido = false;
 		ArrayList <Usuario> listaUsuarios = new ArrayList<Usuario>();
 		

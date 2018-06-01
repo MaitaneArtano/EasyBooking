@@ -2,8 +2,10 @@ package Services;
 
 import java.rmi.RemoteException;
 
+import Server.IAutorizacionGateway;
 
-public class AutorizacionService {
+
+public class AutorizacionService implements IAutorizacionGateway {
 	
 	private static AutorizacionService instance;
 
@@ -14,6 +16,7 @@ public class AutorizacionService {
 			try 
 			{
 				instance = new AutorizacionService();
+				
 			} catch (Exception ex) 
 			{
 				System.err.println("# Error creating AutorizacionService: " + ex);
@@ -26,8 +29,11 @@ public class AutorizacionService {
 	public boolean login(String email, String password)
 	{
 		
+		boolean resultado=instance.login(email, password);
+		return resultado;
 		
-		return false;
+		
+		
 		
 	}
 	
