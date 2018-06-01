@@ -42,7 +42,7 @@
 		</target>
 		
 		<!-- TARGET : server -->
-		<target name="server" depends="build" description="Runs Server program">
+		<target name="server" depends="build, enhance" description="Runs Server program">
 				<java classname="Server.Main" classpathref="full.classpath" fork="true">
 		        	<jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
 					<jvmarg value="-Djava.security.policy=${policy.file}"/>			
