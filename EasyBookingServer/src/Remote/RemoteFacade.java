@@ -15,7 +15,6 @@ import DTO.FacturaDTO;
 import DTO.VueloDTO;
 import Data.Usuario;
 import Data.Vuelo;
-import Server.ILogin;
 import Services.UsuarioService;
 
 
@@ -25,7 +24,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	private static RemoteFacade instance;
 	public Usuario state;
 	private PersistenceManagerFactory pmf;
-	private ILogin objGatewayLogin;
+	
 
 	
 	private RemoteFacade() throws RemoteException 
