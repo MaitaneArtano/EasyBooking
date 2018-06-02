@@ -12,7 +12,7 @@ import DTO.CompleteVueloDTO;
 public interface IRemoteFacade extends Remote
 {
 	
-	public boolean login(String email, String password) throws RemoteException;
+	public boolean login(String email, String password, int plataforma) throws RemoteException;
 	public boolean signin(String email, String password) throws RemoteException;
 	
 	public List<VueloDTO> getVuelos() throws RemoteException;

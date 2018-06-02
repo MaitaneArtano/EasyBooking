@@ -2,19 +2,15 @@ package Remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.jdo.JDOHelper;
-import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
-import javax.jdo.Transaction;
-
 import DTO.CompleteVueloDTO;
 import DTO.FacturaDTO;
 import DTO.VueloDTO;
 import Data.Usuario;
-import Data.Vuelo;
+import Services.AutorizacionService;
 import Services.UsuarioService;
 
 
@@ -24,9 +20,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	private static RemoteFacade instance;
 	public Usuario state;
 	private PersistenceManagerFactory pmf;
-	
 
-	
 	private RemoteFacade() throws RemoteException 
 	{
 		super();
@@ -51,10 +45,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	
 	
 	@Override
-	public boolean login(String email, String password) throws RemoteException 
+	public boolean login(String email, String password, int plataforma) throws RemoteException 
 	{
 		System.out.println("Entra login remote facade");
-		return UsuarioService.getInstance().login(email,password);
+		return AutorizacionService.getInstance().login(email, password, plataforma);
 	}
 
 	@Override

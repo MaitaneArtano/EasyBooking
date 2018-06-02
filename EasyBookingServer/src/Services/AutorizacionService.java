@@ -2,12 +2,16 @@ package Services;
 
 import java.rmi.RemoteException;
 
-import Server.IAutorizacionGateway;
+import Server.FacebookGateway;
+import Server.GoogleGateway;
 
 
-public class AutorizacionService implements IAutorizacionGateway {
+public class AutorizacionService
+{
 	
 	private static AutorizacionService instance;
+	private static GoogleGateway instanceGoogle;
+	private static FacebookGateway instanceFacebook;
 
 	public static AutorizacionService getInstance()  throws RemoteException
 	{
@@ -26,15 +30,19 @@ public class AutorizacionService implements IAutorizacionGateway {
 		return instance;
 	}
 	
-	public boolean login(String email, String password)
+	
+	public boolean login(String email, String password, int plataforma)
 	{
-		
-		boolean resultado=instance.login(email, password);
-		return resultado;
-		
-		
-		
-		
+		System.out.println("Entra login autorizacion service");
+		if(plataforma == 1)
+		{
+			return this.instanceGoogle.login(email, password);
+		}else
+		{
+			return this.instanceFacebook.login(email, password);
+		}
 	}
+
+
 	
 }

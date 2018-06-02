@@ -4,10 +4,8 @@ import java.util.ArrayList;
 
 import Data.Usuario;
 
-public class FacebookGateway implements IAutorizacionGateway {
-
-	private static ArrayList<String> usuarios = new ArrayList<String>();
-	
+public class FacebookGateway implements IAutorizacionGateway
+{	
 	public FacebookGateway()
 	{	
 		
@@ -18,7 +16,7 @@ public class FacebookGateway implements IAutorizacionGateway {
 	public boolean login(String email, String password)  
 	{
 		
-		System.out.println("Entra");
+		System.out.println("Entra login de Facebook");
 		boolean valido = false;
 		ArrayList <Usuario> listaUsuarios = new ArrayList<Usuario>();
 		

@@ -4,12 +4,19 @@ import java.util.ArrayList;
 
 import Data.Usuario;
 
-public class GoogleGateway implements IAutorizacionGateway{
-
-private static ArrayList<String> usuarios = new ArrayList<String>();
-	
+public class GoogleGateway implements IAutorizacionGateway
+{	
 	public GoogleGateway()
 	{
+				
+	}	
+	
+	@Override
+	public boolean login(String email, String password) 
+	{
+		System.out.println("Entra login de Google");
+		boolean valido = false;
+		
 		ArrayList <Usuario> listaUsuarios = new ArrayList<Usuario>();
 		
 		Usuario usuario = new Usuario("pablo@gmail.com", "pablo");
@@ -21,13 +28,25 @@ private static ArrayList<String> usuarios = new ArrayList<String>();
 		listaUsuarios.add(usuario1);
 		listaUsuarios.add(usuario);	
 		
-	}
-	
-	
-	@Override
-	public boolean login(String email, String password) {
-		// TODO Auto-generated method stub
-		return false;
+		for(int i=0; i<listaUsuarios.size(); i++)
+		{
+			if(email.equals(listaUsuarios.get(i).getEmail()))
+			{
+				System.out.println("El email coincide");
+				if(password.equals(listaUsuarios.get(i).getPassword()))
+				{
+					System.out.println("Acceso permitido");
+					valido = true;
+				}
+				
+			}else
+			{
+				System.out.println("El email no coincide");
+				valido = false;
+			}
+			
+		}
+		return valido;
 	}
 
 	
