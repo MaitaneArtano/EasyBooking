@@ -46,8 +46,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	@Override
 	public boolean login(String email, String password, int plataforma) throws RemoteException 
 	{
-		System.out.println("Entra login remote facade");
-		return AutorizacionService.getInstance().login(email, password, plataforma);
+		boolean bool;
+		System.out.println("Entra login remote facade. Plataforma: " + plataforma);
+		bool = AutorizacionService.getInstance().login(email, password, plataforma);
+		return bool;
 	}
 
 	@Override

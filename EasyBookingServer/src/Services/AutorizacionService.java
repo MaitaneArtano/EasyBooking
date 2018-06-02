@@ -4,10 +4,8 @@ import java.rmi.RemoteException;
 
 import Server.FacebookGateway;
 import Server.GoogleGateway;
-import Server.IAutorizacionGateway;
 
-
-public class AutorizacionService implements IAutorizacionGateway
+public class AutorizacionService
 {
 	
 	private static AutorizacionService instance;
@@ -34,27 +32,20 @@ public class AutorizacionService implements IAutorizacionGateway
 	
 	public boolean login(String email, String password, int plataforma)
 	{
-		System.out.println("Entra login autorizacion service");
+		System.out.println("Entra login autorizacion service. Plataforma: " + plataforma);
+		boolean bool;
 		if(plataforma == 1)
 		{
-			return AutorizacionService.instanceGoogle.login(email, password); // hemen berez this.instanceGoogle... zeon
+			System.out.println("Voy a Facebook");
+			bool = instanceGoogle.login(email, password); // hemen berez this.instanceGoogle... zeon
+			return bool;
 		}else
 		{
-			return AutorizacionService.instanceFacebook.login(email, password);
+			System.out.println("Voy a Google");
+			bool = instanceFacebook.login(email, password);
+			return bool;
 		}
 	}
-
-
-	@Override
-	public boolean login(String email, String password) 
-	
-	{
-		// i dont know very well nola deitu, ordun borraU indet
-		return false;
-	}
-
-
-	
 	
 
 	
