@@ -5,7 +5,6 @@ import java.rmi.RemoteException;
 import java.util.List;
 
 import DTO.VueloDTO;
-import Data.Vuelo;
 import DTO.FacturaDTO;
 import DTO.CompleteVueloDTO;
 
