@@ -36,14 +36,10 @@ public class DBManager
 	}
 	
 	
-	public void GuardarVuelo(String id_vuelo, String origen, String destino, int precio, String fecha)
-	{
-		Vuelo vuelo;
-		vuelo = new Vuelo(id_vuelo, origen, destino, precio, fecha);
-		
+	public void storeVuelo(Vuelo vuelo)
+	{		
 		vueloDAO = new VueloDAO();
-		vueloDAO.storeVuelo(vuelo);
-		
+		vueloDAO.storeVuelo(vuelo);	
 	}
 	
 	public boolean storeUsuario(Usuario usuario)

@@ -1,6 +1,5 @@
 package Remote;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.jdo.JDOHelper;
@@ -24,7 +23,6 @@ public class VueloDAO implements IVueloDAO
 	@Override
 	public void storeVuelo(Vuelo vuelo) 
 	{
-		// TODO Auto-generated method stub
 		this.storeGuardarVuelo(vuelo);
 	}
 	
@@ -52,7 +50,6 @@ public class VueloDAO implements IVueloDAO
 	@Override
 	public List<Vuelo> getVuelos() 
 	{
-		
 		return null;
 	}
 	

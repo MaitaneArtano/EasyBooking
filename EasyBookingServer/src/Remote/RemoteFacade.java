@@ -10,8 +10,10 @@ import DTO.CompleteVueloDTO;
 import DTO.FacturaDTO;
 import DTO.VueloDTO;
 import Data.Usuario;
+import Data.Vuelo;
 import Services.AutorizacionService;
 import Services.UsuarioService;
+import Services.VueloService;
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 {
@@ -20,7 +22,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	public Usuario state;
 	private PersistenceManagerFactory pmf;
 
-	private RemoteFacade() throws RemoteException 
+	public RemoteFacade() throws RemoteException 
 	{
 		super();
 		pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
@@ -61,7 +63,6 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	@Override
 	public List<VueloDTO> getVuelos() throws RemoteException 
 	{
-		
 		return null;
 	}
 
@@ -80,13 +81,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	}
 
 	@Override
-	public void GuardarVuelo(String id_vuelo, String origen, String destino, int precio, String fecha) throws RemoteException
+	public void GuardarVuelos(List<Vuelo>listaVuelos) throws RemoteException
 	{
-		// TODO Auto-generated method stub
-		
+		VueloService.getInstance().cogerVuelos(listaVuelos);
 	}
-
-
 
 	
 }

@@ -16,8 +16,6 @@ public class Vuelo implements Serializable
 	private int precio;
 	private String fecha;
 	
-	
-	
 	public Vuelo(String id_vuelo, String origen, String destino, int precio, String fecha)
 	{
 		super();

@@ -38,6 +38,7 @@ public class AutorizacionService
 		{
 			System.out.println("Voy a Facebook");
 			bool = instanceGoogle.login(email, password); // hemen berez this.instanceGoogle... zeon
+			System.out.println("Boolean: " + bool);
 			return bool;
 		}else
 		{

@@ -8,15 +8,18 @@ import Remote.IRemoteFacade;
 import Remote.RemoteFacade;
 
 
+@SuppressWarnings("deprecation")
 public class Main 
 {
 
 	public static void main(String[] args) 
 	{
+		//Eager ?? 
+		IntroducirVuelos.getInstance().insertarVuelos();
+		
 		if (System.getSecurityManager() == null) {
 			System.setSecurityManager(new RMISecurityManager());
 		}
-
 		
 		String name = "//" + args[0] + ":" + args[1] + "/" + args[2];		
 		
@@ -28,11 +31,8 @@ public class Main
 			System.out.println(" *  server '" + name + "' started!!");
 		} catch (Exception ex) 
 			{
-			System.err.println(" #  Server Exception: " + ex.getMessage());
+				System.err.println(" #  Server Exception: " + ex.getMessage());
 			}
-		
-		
-
 	}
 
 }
