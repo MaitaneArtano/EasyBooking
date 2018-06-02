@@ -2365,3 +2365,13 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eas
 02-06-18_15:26:02 (RMI TCP Connection(2)-192.168.126.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
 02-06-18_15:26:02 (RMI TCP Connection(2)-192.168.126.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
 02-06-18_15:42:55 (RMI TCP Connection(17)-192.168.126.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+02-06-18_16:19:39 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+02-06-18_16:19:40 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+02-06-18_16:19:40 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+02-06-18_16:19:40 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+02-06-18_16:19:42 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+02-06-18_16:20:00 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+02-06-18_16:20:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+02-06-18_16:20:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+02-06-18_16:20:01 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+02-06-18_16:20:02 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
