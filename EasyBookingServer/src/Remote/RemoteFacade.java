@@ -13,7 +13,6 @@ import Data.Usuario;
 import Services.AutorizacionService;
 import Services.UsuarioService;
 
-
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 {
 	private static final long serialVersionUID = 1L;
