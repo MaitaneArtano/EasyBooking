@@ -4,9 +4,10 @@ import java.rmi.RemoteException;
 
 import Server.FacebookGateway;
 import Server.GoogleGateway;
+import Server.IAutorizacionGateway;
 
 
-public class AutorizacionService
+public class AutorizacionService implements IAutorizacionGateway
 {
 	
 	private static AutorizacionService instance;
@@ -36,13 +37,23 @@ public class AutorizacionService
 		System.out.println("Entra login autorizacion service");
 		if(plataforma == 1)
 		{
-			return this.instanceGoogle.login(email, password);
+			return AutorizacionService.instanceGoogle.login(email, password); // hemen berez this.instanceGoogle... zeon
 		}else
 		{
-			return this.instanceFacebook.login(email, password);
+			return AutorizacionService.instanceFacebook.login(email, password);
 		}
 	}
 
+
+	@Override
+	public boolean login(String email, String password) 
+	{
+		
+		
+		return true;
+	}
+	
+	
 
 	
 }
