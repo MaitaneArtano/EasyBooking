@@ -58,9 +58,18 @@ public class DBManager
 	
 	public Vuelo getVuelo(String id_vuelo)
 	{
-		vueloDAO = new VueloDAO();
-		vueloDAO.getVuelo(id_vuelo);
-		return (Vuelo)vueloDAO; //Hemen ya vuelo bueltatzenda o vueloDAO?
+		ArrayList<Vuelo>vuelos = new ArrayList<Vuelo>();
+		vuelos = vueloDAO.getVuelos();
+		for(int i=0; i<vuelos.size(); i++)
+		{
+			if(vuelos.get(i).getId_vuelo().equals(id_vuelo))
+			{
+				return vuelos.get(i);
+			}
+		}
+		System.out.println("Ningun vuelo ha coincidido");
+		return null;
+		
 	}
 	
 	

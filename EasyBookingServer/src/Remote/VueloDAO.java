@@ -102,7 +102,6 @@ public class VueloDAO implements IVueloDAO
 			tx.begin();			
 			Extent<Vuelo> extentP = pm.getExtent(Vuelo.class);
 			Vuelo vuelo;
-			int cont=0;
 			for (Vuelo p : extentP)
 			{
 				vuelo = new Vuelo();
