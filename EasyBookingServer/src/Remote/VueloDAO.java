@@ -38,7 +38,7 @@ public class VueloDAO implements IVueloDAO
 		PersistenceManager pm = pmf.getPersistenceManager();
 	    Transaction tx = pm.currentTransaction();
 	    
-	    vue.deleteAllVuelos();
+	    //vue.deleteAllVuelos();
 	   
 	    try {
 	       tx.begin();
@@ -122,7 +122,7 @@ public class VueloDAO implements IVueloDAO
 	}
 
 	
-	public void deleteAllVuelos() {
+	/*public void deleteAllVuelos() {
 		 
 		System.out.println("- Cleaning the DB...");			
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -156,7 +156,7 @@ public class VueloDAO implements IVueloDAO
 			pm.close();
 		}
 	}
-}
+}*/
 
 	
 
