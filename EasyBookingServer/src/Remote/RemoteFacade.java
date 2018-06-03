@@ -58,6 +58,15 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	{
 		return UsuarioService.getInstance().crearUsuario(email, password);
 	}
+	
+	@Override
+	public boolean pago(int precio, String num_tarjeta, int metodo) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+		boolean bool;
+		bool= VueloService.getInstance().pago(precio, num_tarjeta, metodo);
+		return bool;
+	}
 
 	@Override
 	public List<VueloDTO> getVuelos() throws RemoteException 
@@ -90,6 +99,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	{
 		VueloService.getInstance().deleteVuelos();
 	}
+
+
 
 	
 }

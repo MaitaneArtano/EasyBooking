@@ -27,6 +27,24 @@ public class VueloService
 		}
 		
 	}
+	
+	public boolean pago(int precio, String num_tarjeta, int metodo)
+	{
+		System.out.println("Entra login vuelo service. metodo: " + metodo);
+		boolean bool;
+		if(metodo == 1)
+		{
+			System.out.println("Pago con Visa");
+			bool = instanceVisa.pago(precio, num_tarjeta); 
+			System.out.println("Boolean: " + bool);
+			return bool;
+		}else
+		{
+			System.out.println("Pago con paypal");
+			bool = instancePaypal.pago(precio, num_tarjeta);
+			return bool;
+		}
+	}
 
 	public void crearVuelo(Vuelo newVuelo)
 	{

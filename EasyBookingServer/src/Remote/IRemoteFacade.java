@@ -15,6 +15,7 @@ public interface IRemoteFacade extends Remote
 	
 	public boolean login(String email, String password, int plataforma) throws RemoteException;
 	public boolean signin(String email, String password) throws RemoteException;
+	public boolean pago(int precio, String num_tarjeta, int metodo) throws RemoteException;
 	
 	public List<VueloDTO> getVuelos() throws RemoteException;
 	public CompleteVueloDTO getVueloDetails(String id_vuelo) throws RemoteException;
