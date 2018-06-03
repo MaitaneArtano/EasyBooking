@@ -3,10 +3,16 @@ package Services;
 import DB.DBManager;
 import DTO.CompleteVueloDTO;
 import Data.Vuelo;
+import Server.FacebookGateway;
+import Server.GoogleGateway;
+import Server.PaypalGateway;
+import Server.VISAGateway;
 
 public class VueloService
 {
 	private static VueloService instance;
+	private static VISAGateway instanceVisa;
+	private static PaypalGateway instancePaypal;
 	private VueloService() {}
 	
 	public static VueloService getInstance()
