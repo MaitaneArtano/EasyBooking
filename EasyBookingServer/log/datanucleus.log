@@ -2459,3 +2459,87 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eas
 03-06-18_10:13:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
 03-06-18_10:13:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
 03-06-18_10:13:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:41:37 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_11:41:38 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_11:41:38 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_11:41:38 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_11:41:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:41:40 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:41:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:41:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:41:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:41:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:41:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:47:13 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_11:47:13 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_11:47:13 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_11:47:13 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_11:47:15 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:47:16 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:47:16 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:47:16 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:48:11 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_11:48:11 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_11:48:12 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_11:48:12 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_11:48:13 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:48:14 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:48:14 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:48:14 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:02 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_11:50:02 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_11:50:02 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_11:50:02 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_11:50:03 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:05 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:05 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:05 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:36 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_11:50:36 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_11:50:36 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_11:50:36 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_11:50:37 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:39 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "Data.Vuelo@2f8dad04" con SQL "INSERT INTO `VUELO` (`DESTINO`,`FECHA`,`ID_VUELO`,`ORIGEN`,`PRECIO`,`VUE_VUELO_ID_OID`,`VUELOSS_VUELO_ID_OID`,`VUELOSS_INTEGER_IDX`) VALUES (?,?,?,?,?,?,?,?)" ha tirado un error : Unknown column 'VUE_VUELO_ID_OID' in 'field list'
+03-06-18_11:50:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:39 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "Data.Vuelo@1c742ed4" con SQL "INSERT INTO `VUELO` (`DESTINO`,`FECHA`,`ID_VUELO`,`ORIGEN`,`PRECIO`,`VUE_VUELO_ID_OID`,`VUELOSS_VUELO_ID_OID`,`VUELOSS_INTEGER_IDX`) VALUES (?,?,?,?,?,?,?,?)" ha tirado un error : Unknown column 'VUE_VUELO_ID_OID' in 'field list'
+03-06-18_11:50:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:39 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "Data.Vuelo@4808bc9b" con SQL "INSERT INTO `VUELO` (`DESTINO`,`FECHA`,`ID_VUELO`,`ORIGEN`,`PRECIO`,`VUE_VUELO_ID_OID`,`VUELOSS_VUELO_ID_OID`,`VUELOSS_INTEGER_IDX`) VALUES (?,?,?,?,?,?,?,?)" ha tirado un error : Unknown column 'VUE_VUELO_ID_OID' in 'field list'
+03-06-18_11:50:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:50:40 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "Data.Vuelo@57ad2aa7" con SQL "INSERT INTO `VUELO` (`DESTINO`,`FECHA`,`ID_VUELO`,`ORIGEN`,`PRECIO`,`VUE_VUELO_ID_OID`,`VUELOSS_VUELO_ID_OID`,`VUELOSS_INTEGER_IDX`) VALUES (?,?,?,?,?,?,?,?)" ha tirado un error : Unknown column 'VUE_VUELO_ID_OID' in 'field list'
+03-06-18_11:52:55 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_11:52:56 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_11:52:56 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_11:52:56 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_11:52:57 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:52:58 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:52:58 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:52:58 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:52:59 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:52:59 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:52:59 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:54:30 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_11:54:30 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_11:54:30 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_11:54:30 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_11:54:32 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:54:33 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:54:33 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:54:33 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:54:33 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "Data.Vuelo@2f8dad04" con SQL "INSERT INTO `VUELO` (`DESTINO`,`FECHA`,`ID_VUELO`,`ORIGEN`,`PRECIO`,`VUE_VUELO_ID_OID`,`VUELOSS_VUELO_ID_OID`,`VUELOSS_INTEGER_IDX`) VALUES (?,?,?,?,?,?,?,?)" ha tirado un error : Unknown column 'VUE_VUELO_ID_OID' in 'field list'
+03-06-18_11:54:33 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:54:34 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "Data.Vuelo@1c742ed4" con SQL "INSERT INTO `VUELO` (`DESTINO`,`FECHA`,`ID_VUELO`,`ORIGEN`,`PRECIO`,`VUE_VUELO_ID_OID`,`VUELOSS_VUELO_ID_OID`,`VUELOSS_INTEGER_IDX`) VALUES (?,?,?,?,?,?,?,?)" ha tirado un error : Unknown column 'VUE_VUELO_ID_OID' in 'field list'
+03-06-18_11:54:34 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:54:34 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "Data.Vuelo@4808bc9b" con SQL "INSERT INTO `VUELO` (`DESTINO`,`FECHA`,`ID_VUELO`,`ORIGEN`,`PRECIO`,`VUE_VUELO_ID_OID`,`VUELOSS_VUELO_ID_OID`,`VUELOSS_INTEGER_IDX`) VALUES (?,?,?,?,?,?,?,?)" ha tirado un error : Unknown column 'VUE_VUELO_ID_OID' in 'field list'
+03-06-18_11:54:34 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:54:34 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "Data.Vuelo@57ad2aa7" con SQL "INSERT INTO `VUELO` (`DESTINO`,`FECHA`,`ID_VUELO`,`ORIGEN`,`PRECIO`,`VUE_VUELO_ID_OID`,`VUELOSS_VUELO_ID_OID`,`VUELOSS_INTEGER_IDX`) VALUES (?,?,?,?,?,?,?,?)" ha tirado un error : Unknown column 'VUE_VUELO_ID_OID' in 'field list'
+03-06-18_11:55:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_11:55:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_11:55:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_11:55:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_11:55:45 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:55:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:55:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_11:55:47 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla

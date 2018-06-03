@@ -2,8 +2,11 @@ package Data;
 
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.jdo.annotations.PersistenceCapable;
+
 
 @PersistenceCapable(detachable = "true")
 
@@ -16,6 +19,9 @@ public class Vuelo implements Serializable
 	private int precio;
 	private String fecha;
 	
+	private List<Vuelo> vueloss;
+	private Vuelo vue;
+	
 	public Vuelo(String id_vuelo, String origen, String destino, int precio, String fecha)
 	{
 		super();
@@ -24,6 +30,8 @@ public class Vuelo implements Serializable
 		this.destino = destino;
 		this.precio = precio;
 		this.fecha = fecha;
+		
+		this.vueloss = new ArrayList<Vuelo>();
 	}
 	public Vuelo()
 	{
@@ -61,7 +69,16 @@ public class Vuelo implements Serializable
 		this.fecha = fecha;
 	}	
 	
+	public void removeVuelos(){
+		for (Vuelo v: vueloss){
+			v.discardVuelo();
+		}
+	}
 	
+	public void discardVuelo() {
+		vue.removeVuelos();
+		vue = null;
+	}
 	
 	
 
