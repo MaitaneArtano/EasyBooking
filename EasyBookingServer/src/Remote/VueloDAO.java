@@ -69,7 +69,7 @@ public class VueloDAO implements IVueloDAO
 			
 	    	tx.begin();
 	    	//Hemen enao bate segura .getName() in behar danik
-	    	Query query = pm.newQuery("SELECT FROM " + Vuelo.class.getName() + " WHERE name == '" + id_vuelo + "'");
+	    	Query query = pm.newQuery("SELECT FROM " + Vuelo.class.getName() + " WHERE VUELO_ID == '" + id_vuelo + "'");
 	    	query.setUnique(true);
 	    	miVuelo = (Vuelo)query.execute();	    
  	    	tx.commit();
