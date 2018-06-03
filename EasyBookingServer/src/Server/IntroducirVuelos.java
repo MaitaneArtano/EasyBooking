@@ -35,22 +35,16 @@ public class IntroducirVuelos
 	
 	public void insertarVuelos()
 	{
-		
-		
 		//id_vuelo, origen, destino, precio fecha
-		Vuelo vuelo1 = new Vuelo("0101", "Bilbao", "San Francisco", 670, "01/04/2019");
-		Vuelo vuelo2 = new Vuelo("0103", "Madrid", "Londres", 23, "06/06/2018");
-		Vuelo vuelo3 = new Vuelo("0105", "Barcelona", "Varsovia", 30, "05/07/2019");
-		Vuelo vuelo4 = new Vuelo("0109", "Paris", "Toronto", 780, "10/12/2018");
+		Vuelo vuelo1 = new Vuelo("1", "Bilbao", "San Francisco", 670, "01/04/2019");
+		Vuelo vuelo2 = new Vuelo("2", "Madrid", "Londres", 23, "06/06/2018");
+		Vuelo vuelo3 = new Vuelo("3", "Barcelona", "Varsovia", 30, "05/07/2019");
+		Vuelo vuelo4 = new Vuelo("4", "Paris", "Toronto", 780, "10/12/2018");
 		listaVuelos.add(vuelo4);
 		listaVuelos.add(vuelo3);
 		listaVuelos.add(vuelo2);
 		listaVuelos.add(vuelo1);
 		instance.mandarABD(listaVuelos);
-		
-		
-		
-	
 	}
 	public void mandarABD(List<Vuelo> listaVuelos)
 	{
