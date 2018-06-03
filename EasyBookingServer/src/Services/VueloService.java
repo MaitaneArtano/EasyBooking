@@ -1,6 +1,7 @@
 package Services;
 
 import DB.DBManager;
+import DTO.CompleteVueloDTO;
 import Data.Vuelo;
 
 public class VueloService
@@ -30,6 +31,21 @@ public class VueloService
 	public void crearVuelo(Vuelo newVuelo)
 	{
 		DBManager.getInstance().storeVuelo(newVuelo);
+	}
+	
+	public CompleteVueloDTO buscarVuelo(String id_vuelo)
+	{
+		Vuelo miVuelo = new Vuelo();
+		miVuelo = DBManager.getInstance().getVuelo(id_vuelo);
+		
+		CompleteVueloDTO miVueloDTO = new CompleteVueloDTO();
+		miVueloDTO.setId_vuelo(miVuelo.getId_vuelo());
+		miVueloDTO.setOrigen(miVuelo.getOrigen());
+		miVueloDTO.setDestino(miVuelo.getDestino());
+		miVueloDTO.setFecha(miVuelo.getFecha());
+		miVueloDTO.setPrecio(miVuelo.getPrecio());
+		
+		return miVueloDTO;
 	}
 
 

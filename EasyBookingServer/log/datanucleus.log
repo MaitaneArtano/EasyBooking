@@ -2375,3 +2375,87 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eas
 02-06-18_16:20:01 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
 02-06-18_16:20:01 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
 02-06-18_16:20:02 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:33:05 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_08:33:05 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_08:33:05 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_08:33:05 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\lib\datanucleus-api-jdo-5.1.2.jar
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\lib\datanucleus-cache-5.1.0-release.jar
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\lib\datanucleus-core-5.1.2.jar
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\lib\datanucleus-rdbms-5.1.2.jar
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\lib\javax.jdo-3.2.0-m7.jar
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\lib\log4j-1.2.14.jar
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\lib\mysql-connector-java-5.1.44.jar
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin
+03-06-18_08:33:06 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\resources
+03-06-18_08:33:06 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\DB\DBManager.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\DTO\CompleteVueloDTO.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\DTO\FacturaDTO.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\DTO\UsuarioDTO.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\DTO\VueloDTO.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Remote\IRemoteFacade.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Remote\IUsuarioDAO.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Remote\IVueloDAO.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Remote\RemoteFacade.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Remote\UsuarioDAO.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Remote\VueloDAO.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Server\FacebookGateway.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Server\GoogleGateway.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Server\IAutorizacionGateway.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Server\IPago.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Server\IntroducirVuelos.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Server\Main.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Services\AutorizacionService.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Services\UsuarioService.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Services\VueloService.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Utils\AuthorisationAssembler.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Utils\PaymentAssembler.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Utils\VueloAssembler.class
+03-06-18_08:33:08 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+03-06-18_08:35:32 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_08:35:33 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_08:35:33 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_08:35:33 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_08:35:34 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:36:00 (RMI TCP Connection(2)-192.168.126.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:36:00 (RMI TCP Connection(2)-192.168.126.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:36:00 (RMI TCP Connection(2)-192.168.126.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:39:09 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_08:39:09 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_08:39:09 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_08:39:09 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_08:39:11 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:39:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:39:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:39:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:39:13 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:39:13 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_08:39:13 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:12:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_10:12:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_10:12:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_10:12:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_10:12:44 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:12:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:12:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:12:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:12:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:12:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:12:47 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:13:08 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_10:13:09 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_10:13:09 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_10:13:09 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_10:13:10 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:13:11 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:13:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:13:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:13:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:13:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_10:13:12 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla

@@ -25,6 +25,10 @@ public class Vuelo implements Serializable
 		this.precio = precio;
 		this.fecha = fecha;
 	}
+	public Vuelo()
+	{
+		
+	}
 	
 	public String getId_vuelo() {
 		return id_vuelo;

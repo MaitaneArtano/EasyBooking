@@ -73,10 +73,11 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	}
 
 	@Override
-	public List<CompleteVueloDTO> getVueloDetails(String id_vuelo)  throws RemoteException
+	public CompleteVueloDTO getVueloDetails(String id_vuelo)  throws RemoteException
 	{
-		
-		return null;
+		CompleteVueloDTO miVuelo = new CompleteVueloDTO();
+		miVuelo = VueloService.getInstance().buscarVuelo(id_vuelo);
+		return miVuelo;
 	}
 
 	@Override

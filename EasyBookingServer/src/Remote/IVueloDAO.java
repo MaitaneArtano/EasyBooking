@@ -9,4 +9,5 @@ public interface IVueloDAO
 {
 	public void storeVuelo(Vuelo vuelo);
 	public List<Vuelo> getVuelos();
+	public Vuelo getVuelo(String id_vuelo);
 }
