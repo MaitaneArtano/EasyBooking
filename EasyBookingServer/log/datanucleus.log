@@ -2904,3 +2904,41 @@ org.datanucleus.exceptions.NucleusUserException: Variable 'name' is unbound and 
 03-06-18_20:20:26 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
 03-06-18_20:20:57 (RMI TCP Connection(2)-192.168.126.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
 03-06-18_20:34:48 (RMI TCP Connection(7)-192.168.126.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:51:36 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_20:51:36 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_20:51:36 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_20:51:36 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_20:51:38 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:51:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:51:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:57:24 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_20:57:24 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_20:57:24 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_20:57:24 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_20:57:26 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:57:27 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:57:27 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:59:04 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_20:59:05 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_20:59:05 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_20:59:05 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_20:59:06 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:59:07 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:59:07 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:59:08 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:59:08 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:59:08 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:59:08 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_20:59:09 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_21:00:26 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_21:00:26 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_21:00:26 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_21:00:26 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_21:00:27 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_21:00:29 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_21:00:29 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_21:00:29 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_21:00:30 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_21:00:30 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_21:00:30 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_21:00:30 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla

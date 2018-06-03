@@ -85,6 +85,11 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 	{
 		VueloService.getInstance().cogerVuelos(listaVuelos);
 	}
+	@Override
+	public void DeleteVuelos() throws RemoteException
+	{
+		VueloService.getInstance().deleteVuelos();
+	}
 
 	
 }

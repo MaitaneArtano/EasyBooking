@@ -19,5 +19,6 @@ public interface IRemoteFacade extends Remote
 	public List<VueloDTO> getVuelos() throws RemoteException;
 	public CompleteVueloDTO getVueloDetails(String id_vuelo) throws RemoteException;
 	public void GuardarVuelos(List<Vuelo>listaVuelos) throws RemoteException;
+	public void DeleteVuelos() throws RemoteException;
 	public List<FacturaDTO> compra(String id_vuelo, int num_tarjeta) throws RemoteException;
 }

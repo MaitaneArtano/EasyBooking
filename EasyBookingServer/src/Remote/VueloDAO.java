@@ -37,8 +37,6 @@ public class VueloDAO implements IVueloDAO
 		
 		PersistenceManager pm = pmf.getPersistenceManager();
 	    Transaction tx = pm.currentTransaction();
-	    
-	    //vue.deleteAllVuelos();
 	   
 	    try {
 	       tx.begin();
@@ -126,45 +124,36 @@ public class VueloDAO implements IVueloDAO
 	    }			
 		return vuelos;
 	}
-
 	
-	/*public void deleteAllVuelos() {
-		 
+	public void deleteVuelos()
+	{
 		System.out.println("- Cleaning the DB...");			
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
-		try {		
-		tx.begin();
+		try 
+		{		
+			tx.begin(); 		
 		
+			Query<Vuelo> query1 = pm.newQuery(Vuelo.class);
+			System.out.println(" * '" + query1.deletePersistentAll() + "' flight deleted from the DB.");			
 		
-		Extent<Vuelo> extentB = pm.getExtent(Vuelo.class, true);
-		for (Vuelo b : extentB) {
-			b.removeVuelos();
-		}
-		// Updating the database so changes are considered before commit
-		pm.flush();				
+			tx.commit();
 		
-		Query query1 = pm.newQuery(Vuelo.class);
-		System.out.println(" * '" + query1.deletePersistentAll() + "' vuelos deleted from the DB.");			
-		
-		
-		tx.commit();
-		
-	} catch (Exception ex) {
-		System.err.println(" $ Error cleaning the DB: " + ex.getMessage());
-		ex.printStackTrace();
-	} finally {
-		if (tx != null && tx.isActive()) {
-			tx.rollback();
-		}
-		
-		if (pm != null && !pm.isClosed()) {
-			pm.close();
+		} catch (Exception ex)
+		{
+			System.err.println(" $ Error cleaning the DB: " + ex.getMessage());
+			ex.printStackTrace();
+		} finally 
+		{
+			if (tx != null && tx.isActive())
+			{
+				tx.rollback();
+			}
+			if (pm != null && !pm.isClosed())
+			{
+				pm.close();
+			}
 		}
 	}
-}*/
-
-	
-
-	
+		
 }

@@ -50,6 +50,7 @@ public class IntroducirVuelos
 	{
 		try 
 		{
+			RemoteFacade.getInstance().DeleteVuelos();
 			RemoteFacade.getInstance().GuardarVuelos(listaVuelos);
 		} catch (RemoteException e) 
 		{

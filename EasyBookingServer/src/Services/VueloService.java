@@ -33,6 +33,11 @@ public class VueloService
 		DBManager.getInstance().storeVuelo(newVuelo);
 	}
 	
+	public void deleteVuelos()
+	{
+		DBManager.getInstance().deleteVuelos();
+	}
+	
 	public CompleteVueloDTO buscarVuelo(String id_vuelo)
 	{
 		Vuelo miVuelo = new Vuelo();
