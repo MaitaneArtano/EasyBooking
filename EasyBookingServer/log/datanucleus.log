@@ -2634,3 +2634,193 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'eas
 03-06-18_15:14:08 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
 03-06-18_15:14:08 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
 03-06-18_15:14:08 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:55:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_15:55:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_15:55:43 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_15:55:43 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_15:55:45 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:55:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:55:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:55:46 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:55:47 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:55:47 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:55:47 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:56:51 (RMI TCP Connection(2)-192.168.241.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:56:59 (RMI TCP Connection(2)-192.168.241.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:56:59 (RMI TCP Connection(2)-192.168.241.1) INFO  [DataNucleus.JDO] - Exception thrown
+Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+org.datanucleus.exceptions.NucleusUserException: Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processUnboundExpression(QueryToSQLMapper.java:4952)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processEqExpression(QueryToSQLMapper.java:2741)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileRelationalExpression(AbstractExpressionEvaluator.java:80)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileOrAndExpression(AbstractExpressionEvaluator.java:68)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.evaluate(AbstractExpressionEvaluator.java:36)
+	at org.datanucleus.query.expression.Expression.evaluate(Expression.java:338)
+	at org.datanucleus.query.expression.DyadicExpression.evaluate(DyadicExpression.java:75)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compileFilter(QueryToSQLMapper.java:590)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compile(QueryToSQLMapper.java:466)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileQueryFull(JDOQLQuery.java:902)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:364)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1927)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1855)
+	at org.datanucleus.store.query.Query.execute(Query.java:1837)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at Remote.VueloDAO.getVuelo(Unknown Source)
+	at DB.DBManager.getVuelo(Unknown Source)
+	at Services.VueloService.buscarVuelo(Unknown Source)
+	at Remote.RemoteFacade.getVueloDetails(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_15:59:09 (RMI TCP Connection(3)-192.168.241.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:59:12 (RMI TCP Connection(3)-192.168.241.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_15:59:12 (RMI TCP Connection(3)-192.168.241.1) INFO  [DataNucleus.JDO] - Exception thrown
+Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+org.datanucleus.exceptions.NucleusUserException: Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processUnboundExpression(QueryToSQLMapper.java:4952)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processEqExpression(QueryToSQLMapper.java:2741)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileRelationalExpression(AbstractExpressionEvaluator.java:80)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileOrAndExpression(AbstractExpressionEvaluator.java:68)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.evaluate(AbstractExpressionEvaluator.java:36)
+	at org.datanucleus.query.expression.Expression.evaluate(Expression.java:338)
+	at org.datanucleus.query.expression.DyadicExpression.evaluate(DyadicExpression.java:75)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compileFilter(QueryToSQLMapper.java:590)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compile(QueryToSQLMapper.java:466)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileQueryFull(JDOQLQuery.java:902)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:364)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1927)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1855)
+	at org.datanucleus.store.query.Query.execute(Query.java:1837)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at Remote.VueloDAO.getVuelo(Unknown Source)
+	at DB.DBManager.getVuelo(Unknown Source)
+	at Services.VueloService.buscarVuelo(Unknown Source)
+	at Remote.RemoteFacade.getVueloDetails(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_16:01:32 (RMI TCP Connection(5)-192.168.241.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:01:35 (RMI TCP Connection(5)-192.168.241.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:01:35 (RMI TCP Connection(5)-192.168.241.1) INFO  [DataNucleus.JDO] - Exception thrown
+Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+org.datanucleus.exceptions.NucleusUserException: Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processUnboundExpression(QueryToSQLMapper.java:4952)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processEqExpression(QueryToSQLMapper.java:2741)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileRelationalExpression(AbstractExpressionEvaluator.java:80)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileOrAndExpression(AbstractExpressionEvaluator.java:68)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.evaluate(AbstractExpressionEvaluator.java:36)
+	at org.datanucleus.query.expression.Expression.evaluate(Expression.java:338)
+	at org.datanucleus.query.expression.DyadicExpression.evaluate(DyadicExpression.java:75)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compileFilter(QueryToSQLMapper.java:590)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compile(QueryToSQLMapper.java:466)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileQueryFull(JDOQLQuery.java:902)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:364)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1927)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1855)
+	at org.datanucleus.store.query.Query.execute(Query.java:1837)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at Remote.VueloDAO.getVuelo(Unknown Source)
+	at DB.DBManager.getVuelo(Unknown Source)
+	at Services.VueloService.buscarVuelo(Unknown Source)
+	at Remote.RemoteFacade.getVueloDetails(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_16:03:23 (RMI TCP Connection(7)-192.168.241.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:03:26 (RMI TCP Connection(7)-192.168.241.1) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:03:26 (RMI TCP Connection(7)-192.168.241.1) INFO  [DataNucleus.JDO] - Exception thrown
+Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+org.datanucleus.exceptions.NucleusUserException: Variable 'name' is unbound and cannot be determined (is it a misspelled field name? or is not intended to be a variable?)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processUnboundExpression(QueryToSQLMapper.java:4952)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.processEqExpression(QueryToSQLMapper.java:2741)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileRelationalExpression(AbstractExpressionEvaluator.java:80)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.compileOrAndExpression(AbstractExpressionEvaluator.java:68)
+	at org.datanucleus.query.expression.AbstractExpressionEvaluator.evaluate(AbstractExpressionEvaluator.java:36)
+	at org.datanucleus.query.expression.Expression.evaluate(Expression.java:338)
+	at org.datanucleus.query.expression.DyadicExpression.evaluate(DyadicExpression.java:75)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compileFilter(QueryToSQLMapper.java:590)
+	at org.datanucleus.store.rdbms.query.QueryToSQLMapper.compile(QueryToSQLMapper.java:466)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileQueryFull(JDOQLQuery.java:902)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:364)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1927)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1855)
+	at org.datanucleus.store.query.Query.execute(Query.java:1837)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at Remote.VueloDAO.getVuelo(Unknown Source)
+	at DB.DBManager.getVuelo(Unknown Source)
+	at Services.VueloService.buscarVuelo(Unknown Source)
+	at Remote.RemoteFacade.getVueloDetails(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+03-06-18_16:38:37 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.2) para el API "JDO" utilisando el JRE "{2}"
+03-06-18_16:38:38 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Usuario.class" con definicion enhanced
+03-06-18_16:38:38 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\PC\git\EasyBookingServer\EasyBookingServer\bin\Data\Vuelo.class" con definicion enhanced
+03-06-18_16:38:38 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases.
+03-06-18_16:38:39 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:38:40 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:38:40 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:38:40 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:38:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:38:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+03-06-18_16:38:41 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
