@@ -4,13 +4,21 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.jdo.Extent;
+import javax.jdo.PersistenceManager;
+import javax.jdo.Query;
+import javax.jdo.Transaction;
+
 import Data.Vuelo;
 import Remote.RemoteFacade;
+import Remote.VueloDAO;
 
 public class IntroducirVuelos
 {
 	private static IntroducirVuelos instance = new IntroducirVuelos();
 	private List<Vuelo> listaVuelos;
+	
+	
 	
 	
 	private IntroducirVuelos()
@@ -27,6 +35,8 @@ public class IntroducirVuelos
 	
 	public void insertarVuelos()
 	{
+		
+		
 		//id_vuelo, origen, destino, precio fecha
 		Vuelo vuelo1 = new Vuelo("0101", "Bilbao", "San Francisco", 670, "01/04/2019");
 		Vuelo vuelo2 = new Vuelo("0103", "Madrid", "Londres", 23, "06/06/2018");
@@ -37,6 +47,10 @@ public class IntroducirVuelos
 		listaVuelos.add(vuelo2);
 		listaVuelos.add(vuelo1);
 		instance.mandarABD(listaVuelos);
+		
+		
+		
+	
 	}
 	public void mandarABD(List<Vuelo> listaVuelos)
 	{
