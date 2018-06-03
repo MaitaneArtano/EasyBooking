@@ -29,12 +29,12 @@ public class VueloAssembler
 		return dto;
 	}
 
-	 //Hau organigraman eztao
 	public List<VueloDTO> entityToDTO(List<Vuelo> vuelos) 
 	{		
 		List<VueloDTO> dtos = new ArrayList<>();
 		
-		for (Vuelo vuelo : vuelos) {
+		for (Vuelo vuelo : vuelos)
+		{
 			dtos.add((VueloDTO) this.entityToDTO(vuelo));
 		}
 		

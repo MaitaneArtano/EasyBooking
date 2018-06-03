@@ -40,7 +40,6 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade
 				System.err.println("# Error creating RemoteFacade: " + ex);
 			}
 		}
-		
 		return instance;
 	}
 	

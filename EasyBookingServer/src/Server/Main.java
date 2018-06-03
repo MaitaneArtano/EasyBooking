@@ -14,10 +14,11 @@ public class Main
 
 	public static void main(String[] args) 
 	{
-		//Eager ?? 
+		//Eager 
 		IntroducirVuelos.getInstance().insertarVuelos();
 		
-		if (System.getSecurityManager() == null) {
+		if (System.getSecurityManager() == null)
+		{
 			System.setSecurityManager(new RMISecurityManager());
 		}
 		
@@ -30,9 +31,9 @@ public class Main
 			Naming.rebind(name, (Remote) remoteFacade);
 			System.out.println(" *  server '" + name + "' started!!");
 		} catch (Exception ex) 
-			{
-				System.err.println(" #  Server Exception: " + ex.getMessage());
-			}
+		{
+			System.err.println(" #  Server Exception: " + ex.getMessage());
+		}
 	}
 
 }

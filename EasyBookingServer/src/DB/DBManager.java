@@ -37,7 +37,8 @@ public class DBManager
 	
 	
 	public void storeVuelo(Vuelo vuelo)
-	{		
+	{
+		System.out.println("Guardando vuelo...");
 		vueloDAO = new VueloDAO();
 		vueloDAO.storeVuelo(vuelo);	
 	}

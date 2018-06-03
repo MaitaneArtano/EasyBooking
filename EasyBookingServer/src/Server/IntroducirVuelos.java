@@ -36,7 +36,7 @@ public class IntroducirVuelos
 		listaVuelos.add(vuelo3);
 		listaVuelos.add(vuelo2);
 		listaVuelos.add(vuelo1);
-		
+		instance.mandarABD(listaVuelos);
 	}
 	public void mandarABD(List<Vuelo> listaVuelos)
 	{

@@ -19,6 +19,7 @@ public class VueloService
 	
 	public void cogerVuelos(java.util.List<Vuelo> listaVuelos)
 	{
+		System.out.println("Entra VueloService cogerVuelos");
 		for(int i=0; i<listaVuelos.size();i++)
 		{
 			this.crearVuelo(listaVuelos.get(i));
