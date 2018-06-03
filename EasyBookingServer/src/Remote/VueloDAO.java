@@ -89,24 +89,31 @@ public class VueloDAO implements IVueloDAO
 	}
 
 	@Override
-	public List<Vuelo> getVuelos() 
+	public ArrayList<Vuelo> getVuelos() 
 	{
 		PersistenceManager pm = pmf.getPersistenceManager();
+		ArrayList<Vuelo>vuelos = new ArrayList<Vuelo>();
 		
 		Transaction tx = pm.currentTransaction();
-		List<Vuelo> misVuelos = new ArrayList<>();
 		
 		try {
 			System.out.println("   * Retrieving an Extent for Fligths.");
 			
 			tx.begin();			
-			Extent<Vuelo> extent = pm.getExtent(Vuelo.class, true);
-			
-			for (Vuelo vuelo : extent)
+			Extent<Vuelo> extentP = pm.getExtent(Vuelo.class);
+			Vuelo vuelo;
+			int cont=0;
+			for (Vuelo p : extentP)
 			{
-				misVuelos.add(vuelo);
+				vuelo = new Vuelo();
+				vuelo.setId_vuelo(p.getId_vuelo());
+				vuelo.setOrigen(p.getOrigen());
+				vuelo.setDestino(p.getDestino());
+				vuelo.setFecha(p.getFecha());
+				vuelo.setPrecio(p.getPrecio());
+				
+				vuelos.add(vuelo);
 			}
-
 			tx.commit();			
 		} catch (Exception ex) 
 		{
@@ -118,7 +125,7 @@ public class VueloDAO implements IVueloDAO
 
     		pm.close();    		
 	    }			
-		return misVuelos;
+		return vuelos;
 	}
 
 	
